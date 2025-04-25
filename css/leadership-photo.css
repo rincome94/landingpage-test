@@ -1,0 +1,26 @@
+.leadership-photo {
+    width: 100%;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.leadership-photo .photo-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leadership-photo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius-md);
+    transition: transform var(--transition-normal);
+}
+
+.leadership-photo img:hover {
+    transform: scale(1.02);
+}
