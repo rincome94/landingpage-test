@@ -880,7 +880,7 @@ img {
 
 .opt-in-image .image-container {
     height: 500px;
-    background: url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80') center/cover no-repeat;
+    background: url('../../external.html?link=https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80') center/cover no-repeat;
     border-radius: var(--radius-lg);
     position: relative;
     overflow: hidden;
