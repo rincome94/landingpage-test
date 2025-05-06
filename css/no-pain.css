@@ -1,0 +1,200 @@
+/* NO Pain - No Needles - Just Real Results Section */
+.no-pain {
+    padding: var(--spacing-xl) 0;
+    background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);
+}
+
+.no-pain-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+    align-items: stretch;
+}
+
+.no-pain-image {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.no-pain-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: var(--radius-lg);
+    transition: transform var(--transition-normal);
+}
+
+.no-pain-image:hover img {
+    transform: scale(1.02);
+}
+
+.no-pain-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.text-box {
+    background: var(--light);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform var(--transition-normal);
+}
+
+.text-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.text-box p {
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+.highlight-purple {
+    background: rgba(138, 43, 226, 0.1);
+    color: #8a2be2;
+    padding: 2px 5px;
+    font-weight: 600;
+}
+
+.text-box.emphasis {
+    background: linear-gradient(135deg, #8a2be2 0%, #ff69b4 100%);
+    color: var(--light);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: var(--spacing-md);
+}
+
+.text-box.emphasis p {
+    margin-bottom: 0;
+}
+
+.btn-gradient {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: linear-gradient(90deg, #8a2be2 0%, #ff69b4 100%);
+    color: var(--light);
+    font-weight: 700;
+    text-align: center;
+    border-radius: var(--radius-full);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all var(--transition-normal);
+    box-shadow: 0 5px 15px rgba(138, 43, 226, 0.3);
+    align-self: center;
+    margin-top: var(--spacing-sm);
+}
+
+.btn-gradient:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(138, 43, 226, 0.4);
+    color: var(--light);
+}
+
+.comparison-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.comparison-box {
+    background: var(--light);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform var(--transition-normal);
+}
+
+.comparison-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.comparison-box h3 {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    font-weight: 700;
+    color: var(--dark);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid #eee;
+}
+
+.comparison-box.traditional h3 {
+    color: #e74c3c;
+}
+
+.comparison-box.discovery h3 {
+    color: #2ecc71;
+}
+
+.comparison-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.comparison-box li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f5f5f5;
+    position: relative;
+    padding-left: 30px;
+}
+
+.comparison-box li:last-child {
+    border-bottom: none;
+}
+
+.comparison-box.traditional li:before {
+    content: '✕';
+    color: #e74c3c;
+    position: absolute;
+    left: 0;
+    top: 8px;
+    font-weight: bold;
+}
+
+.comparison-box.discovery li:before {
+    content: '✓';
+    color: #2ecc71;
+    position: absolute;
+    left: 0;
+    top: 8px;
+    font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .no-pain-top {
+        grid-template-columns: 1fr;
+    }
+    
+    .comparison-boxes {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .text-box {
+        padding: var(--spacing-sm);
+    }
+    
+    .text-box.emphasis {
+        font-size: 1rem;
+    }
+    
+    .btn-gradient {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}

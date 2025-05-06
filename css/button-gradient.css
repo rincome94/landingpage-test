@@ -1,0 +1,27 @@
+.btn-let-me-in {
+    display: block;
+    width: 80%;
+    margin: 30px auto;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, #8a2be2, #a64dff);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-let-me-in:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-let-me-in:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
